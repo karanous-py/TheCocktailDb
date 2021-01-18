@@ -10,7 +10,7 @@ namespace TheCocktailDb.Services
     {
          void Insert(Register register);
 
-         Register GetByInfoUser(CheckUser check);
+         Register GetByInfoUser(string username);
 
          List<Register> GetAllUser();
     }

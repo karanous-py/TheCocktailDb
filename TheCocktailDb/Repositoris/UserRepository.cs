@@ -17,15 +17,15 @@ namespace TheCocktailDb.Repositoris
             return Users;
         }
 
-        public Register GetByInfoUser(CheckUser check)
+        public Register GetByInfoUser(string username)
         {
             try
             {
-                return Users.FirstOrDefault(x => x.Email == check.email && x.UserName==check.username);
+                return Users.FirstOrDefault(x=> x.UserName==username);
             }
             catch 
             {
-                Console.WriteLine($"email vared shode ya user name vared shode rezerv shode ast ");
+                Console.WriteLine($"hamchin user name vojo nadarad");
                 throw;
             }
         }
