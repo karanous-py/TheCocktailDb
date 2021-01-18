@@ -14,7 +14,7 @@ namespace TheCocktailDb.Models
 
         public string UserName { get; set; }
 
-
+        [EmailAddress(ErrorMessage = "format email vard shode sahih nist gole mn")]
         public string Email { get; set; }
 
         public List<string> favorites { get; set; }
